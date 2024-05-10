@@ -56,3 +56,44 @@ if($velocidad > 27 && $estatura > 170)
 } else{
     echo "vas a la liga de menores <br/>";
 } echo " <br/> <br/>";
+
+?>
+
+<!-- ejercicio 4 -->
+<?php
+
+$aire= "azul";
+
+switch($aire){
+
+    case "verde":
+    echo "calidad del aire es buena"
+
+    break;
+    case "amarillo":
+    echo "calidad del aire es moderada";
+    
+    break;
+    case "naranja":
+    echo "calidad del aire no es saludable para grupos sensibles"
+
+    break;
+    case "rojo":
+    echo "calidad del aire no es saludable";
+
+    break;
+    case "púrpura":
+    echo "calidad del aire es muy poco saludable";
+
+    break;
+    case "marrón":
+    echo "calidad del aire es peligrosa";
+
+    break;
+    default:
+    echo "el color no es válido";
+    break;
+
+}
+
+?>
