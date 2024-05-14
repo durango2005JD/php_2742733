@@ -1,7 +1,7 @@
 <?php
-$articulo = "10"
+$articulo = "10";
 
-if($articulos <12) {
+if($articulo < 12) {
     echo "caja rapida";
 } else{
     echo "caja normal";
@@ -9,7 +9,7 @@ if($articulos <12) {
 
 echo "<br/> <br/>";
 
-$edad = "19"
+$edad = "19";
 
 if($edad >= 19) {
     echo "puedes votar";
@@ -30,7 +30,7 @@ if($años <18){
     echo " no se puede entrar a la discoteca <br/>";
 } else{
     echo " puede entrar a la discoteca <br/>";
-} if($nombre=="mario" xor$nombre=="carlos") {
+} if($nombre=="mario" xor $nombre=="carlos") {
     echo "puede entrar al vip <br/>";
 } else {
     echo "No puede entrar al vip <br/>";
@@ -67,7 +67,7 @@ $aire= "azul";
 switch($aire){
 
     case "verde":
-    echo "calidad del aire es buena"
+    echo "calidad del aire es buena";
 
     break;
     case "amarillo":
@@ -75,7 +75,7 @@ switch($aire){
     
     break;
     case "naranja":
-    echo "calidad del aire no es saludable para grupos sensibles"
+    echo "calidad del aire no es saludable para grupos sensibles";
 
     break;
     case "rojo":
