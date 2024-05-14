@@ -1,12 +1,12 @@
 <?php
 
-$numero = 9;
+$edad = 18;
 
-if ($numero <= 12) {
-    echo "Caja rapida";
+if ($edad < 18){
+    echo "Juan no puede votar";
 }else{
-    echo "Caja normal";
-};
+    echo "Juan si puede votar";
+}
 
 ?>
 
@@ -18,6 +18,6 @@ if ($numero <= 12) {
     <title>Document</title>
 </head>
 <body>
-<br><br><a href="index2.php">Problema 2</a>
+<br><br><a href="index3.php">Problema 3</a>
 </body>
 </html>
