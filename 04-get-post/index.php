@@ -1,5 +1,5 @@
 <?php
-
+// modification php 
 //Super globals GET y POST//
 $userName = $_GET['username'];
 $userEmail = $_GET['useremail'];
