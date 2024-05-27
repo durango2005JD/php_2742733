@@ -1,10 +1,34 @@
-<?php
+
+<?php   session_start();
     
     
-/*    session_start();
+
    
-   $_SESSION['nombre'] = 'Josefina';
-   $_SESSION['pais'] = 'Colombia'; */
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $usuario = $_POST ['username'];
+        $password = $_POST ['password'];
+    
+        $user_register = isset($_SESSION['userRegister']) ? $_SESSION ['userRegister'] : null;
+        $pass_register = isset($_SESSION['passRegister']) ? $_SESSION ['passRegister'] : null;
+
+    }
+
+
+    if (empty($usuario) or empty($password)){
+        echo 'rellene el formulario';
+
+    }  else{
+        //echo $usuario .' - '. $password;
+        if ( $usuario ==  $user_register && $password ==  $pass_register){
+            echo 'listo, iniciastes sesion';
+            header ('location: user.php');
+        } else {
+            echo 'Tu usuario no existe';
+        }
+    }
+    
+    
   
 ?>
 
@@ -23,19 +47,19 @@
    
     
 
-    <form action="registro.php" method="post">
+    <form action="index.php" method="post">
 
     <label for="username">User</label>
     <input id="username" type="text" placeholder="User" name="username">
     <label for="password">Password</label>
     <input id="password" type="password" placeholder="Password" name="password">
-    <button type="submit">Registro</button>
+    <button type="submit">Iniciar sesion</button>
 
     </form>
 
 
-    <a href="./user.php">User page</a>
-    <a href="./cerrar.php">Cerrar</a>
+    <a href="./registro.php">Registro php </a>
+
 
 
 </body>

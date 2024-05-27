@@ -13,7 +13,7 @@ session_destroy();
     <title>Document</title>
 </head>
 <body>
-    <h1>Seccion finalizada</h1>
+    <h1>Sesion finalizada</h1>
     <a href="./user.php">User page</a>
     <a href="./index.php">Iniciar Sesion</a>
 </body>
